@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 0em;
+}
+
+
+
+.scoreboard {
+    width: 50em;
+    height: 12em;
+    background: rgb(70, 69, 67);
+    margin: 1em auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: 0.3em;
+}
+
+.big-board {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.middle {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.appearance-frame ,.hit-frame {
+    width: 100%;
+    height: 50%;
+}
+
+.level {
+    width: 90%;
+    height: 90%;
+    margin: 0.5em 1em;
+    border-radius: 0.3em;
+}
+
+.hit {
+    width: 90%;
+    height: 80%;
+    border: 0.3em;
+    margin: 0.5em 0.5em;
+    border-radius: 0.3em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.appearance {
+    width: 90%;
+    height: 80%;
+    border: 0.3em;
+    margin: 0.5em 0.5em;
+    border-radius: 0.3em;
+}
+.score {
+    width: 90%;
+    height: 40%;
+    margin: 0.2em 1em;
+    border-radius: 0.3em;
+}
+
+.high-score {
+    width: 90%;
+    height: 40%;
+    margin: 1em 1em;
+    border-radius: 0.3em;
+}
+
+.level-title {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+.hit-title, .appearance-title{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+.score-title , .high-score-title{
+    font-size: 1.5em;
+    color: white;
+    padding: 0.1em;
+}
+
+
+.level-num-wrapper {
+    width: 50%;
+    height: 50%;
+    margin: 2em auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.second-level, .first-level {
+    width: 50%;
+    height: 100%;
+    margin: 0 0.1em;
+    background-color: rgb(89, 89, 250);
+    border-radius: 0.3em;
+}
+.level-second-num, .level-first-num {
+    font-family: monospace;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 5em;
+    color: white;
+}
+.hit-num , .appearance-num ,.score-num, .high-score-num{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  
+}
+.fifth-num, .fourth-num, .third-num, .second-num, .first-num {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(89, 89, 250); 
+}
+
+.fifth-num-text, .fourth-num-text, .third-num-text, .second-num-text, .first-num-text {
+    color: white;
+    text-align: center;
+    font-size: 2.4em;
+}
+
+
+
+
+.whack-frame {
+    width: 50em;
+    height: 40em;
+    margin: 0em auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.hole {
+    width: 10em;
+    height: 5em;
+    background-color: rgb(14, 13, 13);
+    margin: 2em 2em;
+    border-radius: 100%;
+    position: relative;
+}
+#hold1, #hold2, #hold3, #hold4, #hold5, #hold6, #hold7, #hold8, #hold9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+ 
+}
+.moley {
+    stroke: rgb(131, 104, 99);
+    stroke-width: 0.1em;
+    fill: rgb(131, 104, 99);
+}
+.eye {
+    stroke: rgb(20, 20, 20);
+    stroke-width: 0.1em;
+    fill: rgb(20, 20, 20);
+}
+.inner-eye{
+    stroke: white;
+    stroke-width: 0.1em;
+    fill: white;
+}
+.nose {
+    stroke: rgb(214, 145, 133);
+    stroke-width: 0.1em;
+    fill: rgb(214, 145, 133);
+}
+.mouth {
+    stroke: rgb(214, 145, 133);
+    stroke-width: 0.1em;
+    fill: rgb(214, 145, 133);
+}
+.tooth {
+    stroke: white;
+    stroke-width: 0.1em;
+    fill: white;
+}
+
+.hold1-mole, .hold2-mole, .hold3-mole,
+.hold4-mole, .hold5-mole, .hold6-mole,
+.hold7-mole, .hold8-mole, .hold9-mole {
+    transform: translate(0, 5em);
+    transition: all 0.1s ease;
+}
+
